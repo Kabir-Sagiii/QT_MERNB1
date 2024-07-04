@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script>
+      function changeContent() {
+        var h2DomElement = document.querySelector("h2");
+        // var buttonDomElement = document.querySelector("button");
+
+        h2DomElement.innerText = "Document Modified";
+        // buttonDomElement.innerText = "Enjoying the DOM concept";
+      }
+    </script>
+  </head>
+  <body>
+    <div>
+      <h2>Document Object Model</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem nemo
+        est, reiciendis alias ipsam corrupti. Quo aut reprehenderit porro
+        ratione hic rem laboriosam veniam neque, dolorum, corporis possimus
+        commodi animi.
+      </p>
+      <button onclick="changeContent()">Submit</button>
+    </div>
+  </body>
+</html>
