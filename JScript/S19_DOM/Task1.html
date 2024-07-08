@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DOM</title>
+    <script>
+      function changeToReact() {
+        var h2DomElement = document.querySelector("h2");
+        var imgDomElement = document.querySelector("img");
+
+        h2DomElement.innerText = "React JS";
+        imgDomElement.src =
+          "https://www.freecodecamp.org/news/content/images/size/w2000/2020/02/Ekran-Resmi-2019-11-18-18.08.13.png";
+      }
+      function changeTitle() {
+        var h2DomElement = document.querySelector("h2");
+        var imgDomElement = document.querySelector("img");
+
+        h2DomElement.innerText = "Node JS";
+        imgDomElement.src =
+          "https://cdn-media-1.freecodecamp.org/images/1*DF0g7bNW5e2z9XS9N2lAiw.jpeg";
+      }
+    </script>
+    <style>
+      div {
+        width: 800px;
+        margin: 50px auto;
+        box-shadow: 0 0 10px green;
+        text-align: center;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>React JS</h2>
+      <img
+        src="https://www.freecodecamp.org/news/content/images/size/w2000/2020/02/Ekran-Resmi-2019-11-18-18.08.13.png"
+        width="500"
+        height="300"
+      /><br />
+      <button onclick="changeToReact()">React JS</button>
+      <button onclick="changeTitle()">Node JS</button>
+    </div>
+  </body>
+</html>

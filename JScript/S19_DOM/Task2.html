@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      div {
+        width: 800px;
+        margin: 50px auto;
+        box-shadow: 0 0 10px green;
+        text-align: center;
+        padding: 50px 20px;
+      }
+    </style>
+    <script>
+      function showHidePassword() {
+        var input = document.querySelector("input");
+        var button = document.querySelector("button");
+
+        input.type = "text";
+        button.innerText = "Hide Password";
+
+        for (var x in document) {
+          console.log(x);
+        }
+      }
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <h2>Show / Hide Password</h2>
+
+      <input type="password" placeholder="Enter Password" />
+      <button onclick="showHidePassword()">Show Password</button>
+    </div>
+  </body>
+</html>
