@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script>
+      function createMyDomElement() {
+        var pDomElement = document.createElement("p");
+        pDomElement.textContent = "My first Para";
+
+        var h2DomElement = document.createElement("h2");
+        h2DomElement.innerText = "This is my First Title";
+
+        h2DomElement.style.color = "red";
+
+        var bodyRef = document.querySelector("body");
+        bodyRef.appendChild(h2DomElement);
+        bodyRef.appendChild(pDomElement);
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Create a DOM Element</h2>
+    <button onclick="createMyDomElement()">create dom element</button>
+  </body>
+</html>

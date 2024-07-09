@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script>
+      function createList() {
+        //create ol
+        var olDomElement = document.createElement("ol");
+
+        //create 4 li's
+        var li1 = document.createElement("li");
+        var li2 = document.createElement("li");
+        var li3 = document.createElement("li");
+        var li4 = document.createElement("li");
+
+        //Add content in Li
+        li1.innerText = "Apple";
+        li2.innerText = "Samsung";
+        li3.innerText = "Vivo";
+        li4.innerText = "Oneplus";
+
+        //Add all li inside the ol
+        olDomElement.appendChild(li1);
+        olDomElement.appendChild(li2);
+        olDomElement.appendChild(li3);
+        olDomElement.appendChild(li4);
+
+        //add ol with all li's in the DOM (add as a child of body)
+
+        // var bodyDomElement = document.querySelector("body");
+        // bodyDomElement.appendChild(olDomElement);
+
+        document.querySelector("body").appendChild(olDomElement);
+      }
+    </script>
+  </head>
+  <body>
+    <h2>List Element in Javascript</h2>
+    <button onclick="createList()">New List</button>
+  </body>
+</html>
