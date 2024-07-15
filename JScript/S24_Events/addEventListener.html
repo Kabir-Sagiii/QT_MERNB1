@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function f1() {
+        console.log("f1 is called");
+      }
+      function fn() {
+        var buttonArray = document.querySelectorAll("button");
+        var secondBtn = buttonArray[1];
+
+        // secondBtn.addEventListener("click", function () {
+        //   alert("second btn");
+        // });
+
+        secondBtn.addEventListener("click", f1);
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="fn()">With Event</button>
+
+    <button>Without Event</button>
+  </body>
+</html>

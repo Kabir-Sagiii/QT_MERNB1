@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function getText(event) {
+        var input = event.target;
+        var inputValue = input.value;
+
+        var pDomElement = document.querySelector("p");
+        pDomElement.textContent = inputValue;
+
+        pDomElement.style.color = "green";
+      }
+    </script>
+  </head>
+  <body>
+    <label>Enter Text : </label>
+    <input type="number" oninput="getText(event)" />
+    <p id="data"></p>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function f1() {
+        var button = document.querySelector("button");
+        button.style.borderColor = "red";
+      }
+      function changeBgColor(status) {
+        var button = document.querySelector("button");
+        if (status === "enter") {
+          button.style.backgroundColor = "black";
+          button.style.color = "white";
+        } else {
+          button.style.backgroundColor = "white";
+          button.style.color = "black";
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <button
+      onclick="f1()"
+      onmouseenter="changeBgColor('enter')"
+      onmouseleave="changeBgColor('exit')"
+    >
+      Event Handler
+    </button>
+  </body>
+</html>
