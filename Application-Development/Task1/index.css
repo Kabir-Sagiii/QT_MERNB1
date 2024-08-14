@@ -1,0 +1,9 @@
+body {
+  padding: 50px;
+}
+.genderContainer {
+  margin-top: 30px;
+  display: none;
+  width: 500px;
+  justify-content: space-evenly;
+}
